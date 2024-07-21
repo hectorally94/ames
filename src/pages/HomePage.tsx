@@ -75,7 +75,7 @@ const HomePage: React.FC = () => {
 </section>
 
       {/* Mission Section */}
-      <section className="py-20 px-6 bg-white dark:bg-gray-600 text-white dark:text-gray-100">
+      <section className="py-20 px-6 bg-white dark:bg-gray-600 dark:text-gray-100">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-4xl font-semibold mb-6">Notre Mission</h2>
@@ -85,7 +85,7 @@ const HomePage: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2">
             <img 
-              src="src/assets/amesWhite.ico"
+              src="src/assets/ames.jpeg"
               alt="Mission de la Charité" 
               className="w-full rounded-lg shadow-lg" 
             />
@@ -162,7 +162,7 @@ const HomePage: React.FC = () => {
 
       {/* Latest Cause of Sadakat Section */}
       <section className="py-20 px-6 bg-gray-200  dark:bg-gray-600">
-        <div className="container mx-auto text-center text-white dark:text-gray-100">
+        <div className="container mx-auto text-center dark:text-gray-100">
           <h2 className="text-4xl font-semibold mb-6">Dernières Causes de Sadakat</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {causes.map((cause, index) => (
