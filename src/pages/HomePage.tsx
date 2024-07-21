@@ -5,8 +5,7 @@ import Gallery from '../components/Gallery/allGalleryItems';
 import OurTeam from '../components/teams/OurTeam';
 import OurEvents from '../components/Events/OurEvents';
 import FromOurBlog from '../components/Blog/blogPosts';
-import OurActionnaire from '../components/Actionaires/OurActionnaire';
-import amesImage from 'src/assets/ames.jpeg';
+import OurActionnaire from '../components/Actionaires/OurActionnaire'; 
 
 
 interface CauseProps {
@@ -86,12 +85,11 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           <div className="w-full md:w-1/2">
-          <img
-                src={amesImage}
-                alt="Mission de la Charité"
-  className="w-full rounded-lg shadow-lg"
-/>
-
+            <img 
+              src="src/assets/ames.jpeg"
+              alt="Mission de la Charité" 
+              className="w-full rounded-lg shadow-lg" 
+            />
           </div>
         </div>
       </section>
