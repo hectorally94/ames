@@ -122,7 +122,7 @@ const HomePage: React.FC = () => {
 
       {/* Volunteer Section */}
       <section className="py-20 px-6 bg-gray-200 dark:bg-gray-600">
-        <div className="container mx-auto text-center dark:bg-gray-600 text-white dark:text-gray-100">
+        <div className="container mx-auto text-center dark:bg-gray-600 dark:text-gray-100">
           <h2 className="text-4xl font-semibold mb-6">Participez</h2>
           <p className="text-lg mb-8">
             Vous souhaitez faire une différence ? Il existe de nombreuses façons de vous impliquer, que ce soit en tant que bénévole ou en organisant des événements de collecte de fonds. Chaque petite aide compte !
@@ -136,7 +136,7 @@ const HomePage: React.FC = () => {
       {/* Success Stories Section */}
       <section className="py-20 px-6 bg-gray-100 dark:bg-gray-600 ">
         <div className="container mx-auto text-center ">
-          <h2 className="text-4xl font-semibold mb-6 text-white dark:text-gray-100 ">Histoires de Succès</h2>
+          <h2 className="text-4xl font-semibold mb-6 dark:text-gray-100 ">Histoires de Succès</h2>
           <div className="flex flex-wrap justify-center">
             <div className="w-full md:w-1/2 lg:w-1/3 p-4">
               <div className="bg-white p-6 rounded-lg shadow-lg">

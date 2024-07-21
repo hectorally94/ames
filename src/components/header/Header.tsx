@@ -11,7 +11,6 @@ import {
   ArrowRightEndOnRectangleIcon,
   Bars3Icon,
   EnvelopeIcon,
-  HeartIcon,
   UserIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -44,16 +43,16 @@ export default function Header() {
         <div className="flex justify-between items-center max-w-7xl mx-auto px-6">
           <div className="flex items-center space-x-4 text-sm text-gray-600">
             <span className="flex items-center">
-              <PhoneIcon className="h-5 w-5 text-gray-500 mr-1" />
+              <PhoneIcon className="h-5 w-5 text-gray-500 dark:text-gray-100 mr-1" />
               +257 68522833
             </span>
             <span className="flex items-center">
-              <EnvelopeIcon className="h-5 w-5 text-gray-500 mr-1" />
+              <EnvelopeIcon className="h-5 w-5 text-gray-500 dark:text-gray-100 mr-1" />
               ames@gmail.com
             </span>
           </div>
           <div className="flex space-x-4">
-            <Link to="/volunteer" className="flex items-center text-sm font-semibold text-gray-900 hover:text-indigo-600">
+            <Link to="/volunteer" className="flex items-center text-sm font-semibold text-gray-900 hover:text-indigo-600 dark:hover:text-gray-500">
               <ArrowRightEndOnRectangleIcon className="h-5 w-5 text-gray-500 mr-1" />
               Etre Volontaire
             </Link>

@@ -13,7 +13,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, imageUrl }) => {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden text-center">
         <img src={imageUrl} alt={name} className="w-32 h-32 object-cover rounded-full mx-auto mt-4" />
         <div className="p-4">
-          <h3 className="text-xl font-semibold mb-2">{name}</h3>
+          <h3 className="text-xl font-semibold mb-2 dark:text-gray-500">{name}</h3>
           <p className="text-gray-700">{role}</p>
         </div>
       </div>
