@@ -86,8 +86,8 @@ const HomePage: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2">
             <img 
-              src="src/assets/ames.svg"
-              alt="Mission de ames" 
+              src="src/assets/ames1.ico"
+              alt="Mission de la Charité" 
               className="w-full rounded-lg shadow-lg" 
             />
           </div>
