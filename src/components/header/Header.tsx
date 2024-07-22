@@ -96,6 +96,9 @@ export default function Header() {
           <Link to="/blog" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
             Notre Blog
           </Link>
+          <Link to="/contact" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
+          Contact
+          </Link>
         </PopoverGroup>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -159,6 +162,13 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
                   Notre blog
+                </Link>
+
+                <Link
+                  to="/contact"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
+                >
+                  Contact
                 </Link>
               </div>
               <div className="py-6">
