@@ -32,10 +32,15 @@ contentent pas d'apporter de l'aide partout où les besoins s'en font ressentir 
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2  mb-8 md:mb-0">
             <h2 className="text-4xl font-semibold mb-6">Les leçons du tirées du passé</h2>
-            <p className="text-lg">La direction collégiale de l’AMES a tiré des leçons des expériences menées sur le terrain pour accentuer l’aide par l'intégration des structures socio culturelles dans le développement des différents corridors, convaincus que ces derniers constituent une chaîne de transmission du moteur économique
-Pour ce faire l’association AMES passe outre les conditions politiques et confessionnelles en intégrant les spécificités régionales dans des programmes visant les domaines de son champs d’action que sont:.....
-Pour atteindre ses objectifs l’association AMES passe outre les considérations politiques et confessionnelles  en intégrant les spécificités régionales dans ces programmes. Quels que soient la structure et l'environnement économique, l'équipe de l’association s’investit pour donner un sens à l'aide au présent. 
-Pour mener à terme ses objectifs sur le terrain,  AMES mise à la fois  sur la participation et la bonne volonté partout dans le monde en s’appuyant sur une équipe impliquée.
+            <p className="text-lg">Voici une version corrigée de votre texte :
+
+La direction collégiale de l’AMES a tiré des leçons des expériences menées sur le terrain pour accentuer l’aide par l'intégration des structures socio-culturelles dans le développement des différents corridors, convaincue que ces derniers constituent une chaîne de transmission du moteur économique. 
+
+Pour ce faire, l’association AMES dépasse les conditions politiques et confessionnelles en intégrant les spécificités régionales dans des programmes visant les domaines de son champ d’action, à savoir : la création d’écoles dans le souci de contribuer à l’éducation ; la construction de centres de santé et d'hôpitaux ; la création de centres d’accueil pour orphelins.
+
+Pour atteindre ses objectifs, l’association AMES surmonte les considérations politiques et confessionnelles en intégrant les spécificités régionales dans ses programmes. Quelle que soit la structure et l'environnement économique, l'équipe de l’association s’investit pour donner un sens à l'aide au présent. 
+
+Pour mener à bien ses objectifs sur le terrain, AMES mise à la fois sur la participation et la bonne volonté partout dans le monde en s’appuyant sur une équipe impliquée.
 
 
             </p>
