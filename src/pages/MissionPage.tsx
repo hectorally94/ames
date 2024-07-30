@@ -28,7 +28,9 @@ const MissionPage: React.FC = () => {
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-4xl font-semibold mb-6">Nos Convictions</h2>
                 <p className="text-lg">
-                  Notre mission est de fournir un soutien et des ressources aux communautés dans le besoin. Nous nous concentrons sur des domaines tels que l'éducation, la santé et les secours d'urgence pour aider ceux qui en ont le plus besoin. Avec votre soutien, nous pouvons faire une différence durable dans la vie des gens.
+                Fidèle à sa volonté humanitaire nous sommes une association qui se veut apolitique faisant fi des confessions religieuses, et en dehors de toute discrimination sociale. 
+Les limites d’action de l’association sont celles qui imposent notre indifférence ou une volonté de chacun de nous, à faire un geste non pas peut-être pour changer le monde mais pour contribuer à le rendre meilleur
+
                 </p>
               </div>
               <div className="w-full md:w-1/2">
