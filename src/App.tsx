@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Footer from './components/footer/Footer'
 import AboutPage from './pages/AboutPage'
-import DonatePage from './pages/DonatePage'
 import HomePage from './pages/HomePage'
 import Header from './components/header/Header'
 import BlogActivity from './components/Blog/BlogActivity'
@@ -17,7 +16,6 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/donate" element={<DonatePage />} />
 
       <Route path="/blog" element={<BlogActivity />} />
 
