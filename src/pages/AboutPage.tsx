@@ -9,8 +9,7 @@ const AboutPage: React.FC = () => {
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-4xl font-semibold mb-6">QUI SOMMES-NOUS</h2>
             <p className="text-lg">
-            AMES est une organisation humanitaire déclarée sous le régime de la loi du.............
-
+            AMES est une organisation humanitaire déclarée sous le régime de la loi du 13/4/2012 portant Ordonnance Ministérielle No 530/522
 Le principe fondamental de l'association AMES repose sur l'aide humanitaire mettant l'homme au cœur de l'action. Il va sans dire que les acteurs de l'AMES ne se
 contentent pas d'apporter de l'aide partout où les besoins s'en font ressentir  mais aussi de devancer les problèmes et les causes en s’appuyant tant que faire se peut sur des structures socio-culturelles en places auxquelles participent les populations concernées. 
        Ses objectifs sont: la lutte contre la misère et la pauvreté en encourageant des actions liées au développement des personnes.
