@@ -106,20 +106,20 @@ Les limites d’action de l’association sont celles qui imposent notre indiff�
           <div className="flex flex-wrap justify-center">
             <div className="w-full sm:w-1/3 p-4">
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4">1000+ Enfants Éduqués</h3>
-                <p>Grâce à nos programmes éducatifs, nous avons fourni une éducation de qualité à plus de 1000 enfants dans des zones défavorisées.</p>
+                <h3 className="text-2xl font-semibold mb-4">3500+ Enfants Éduqués</h3>
+                <p>Grâce à nos programmes éducatifs, nous avons fourni une opportunite d'éducation à plus de 3500 enfants dans des zones défavorisées.</p>
               </div>
             </div>
             <div className="w-full sm:w-1/3 p-4">
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4">5000+ Repas Servis</h3>
-                <p>Nous avons servi plus de 5000 repas à des familles dans le besoin grâce à nos programmes de secours alimentaire.</p>
+                <h3 className="text-2xl font-semibold mb-4">9000+ Repas Servis</h3>
+                <p>Nous avons servi plus de 9000 repas à des familles dans le besoin grâce à nos programmes de secours alimentaire.</p>
               </div>
             </div>
             <div className="w-full sm:w-1/3 p-4">
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4">200+ Familles Soutenues</h3>
-                <p>Nos efforts de secours d'urgence ont fourni un soutien à plus de 200 familles en difficulté.</p>
+                <h3 className="text-2xl font-semibold mb-4">1000+ Familles Soutenues</h3>
+                <p>Nos efforts de secours d'urgence ont fourni un soutien à plus de 1000 familles en difficulté.</p>
               </div>
             </div>
           </div>
