@@ -169,7 +169,25 @@ Les limites d’action de l’association sont celles qui imposent notre indiff�
       {/* Latest Cause of Sadakat Section */}
       <section className="py-20 px-6 bg-gray-200  dark:bg-gray-600">
         <div className="container mx-auto text-center dark:text-gray-100">
-          <h2 className="text-4xl font-semibold mb-6">Dernières Causes de AMES</h2>
+          <h2 className="text-4xl font-semibold mb-6">Dernières Actions de AMES</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {causes.map((cause, index) => (
+              <Cause
+                key={index}
+                goal={cause.goal}
+                raised={cause.raised}
+                title={cause.title}
+                description={cause.description}
+                imageUrl={cause.imageUrl}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Latest Cause of Sadakat Section */}
+      <section className="py-20 px-6 bg-gray-200  dark:bg-gray-600">
+        <div className="container mx-auto text-center dark:text-gray-100">
+          <h2 className="text-4xl font-semibold mb-6">Actions encours de AMES</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {causes.map((cause, index) => (
               <Cause
