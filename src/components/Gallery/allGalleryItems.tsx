@@ -35,6 +35,7 @@ const Gallery: React.FC = () => {
         <h2 className="text-4xl font-semibold mb-6">Our Gallery</h2>
         <div className="mb-6">
           {categories.map(category => (
+            
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}

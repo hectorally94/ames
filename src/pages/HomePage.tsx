@@ -64,9 +64,11 @@ const HomePage: React.FC = () => {
     <div className="bg-gray-100 dark:bg-gray-600 min-h-screen flex flex-col pt-20">
       {/* Hero Section */}
       <section className="bg-blue-600 dark:bg-gray-600 text-white dark:text-gray-100 py-20 pt-300 mt-10 flex flex-col items-center">
-    <h1 className="text-5xl font-bold mb-6">Bienvenue sur notre site de charité</h1>
+    <h1 className="text-5xl font-bold mb-6">Bienvenue sur l'association humanitaire régionale</h1>
     <p className="text-lg mb-8 max-w-3xl text-center">
-        Nous sommes dédiés à rendre le monde meilleur. Rejoignez-nous dans notre mission pour créer un changement positif et impacter les vies au sein des communautés.
+      Le principe fondamental de l'association AMES repose sur l'aide humanitaire mettant l'homme au cœur de l'action. Il va sans dire que les acteurs de l'AMES ne se
+contentent pas d'apporter de l'aide partout où les besoins s'en font ressentir  mais aussi de devancer les problèmes et les causes en s’appuyant tant que faire se peut sur des structures socio-culturelles en places auxquelles participent les populations concernées
+
     </p>
     <div>
         <Link to="/donate" className="bg-yellow-500 dark:bg-yellow-400 text-blue-900 dark:text-yellow-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 dark:hover:bg-yellow-300 transition duration-300">
@@ -79,9 +81,11 @@ const HomePage: React.FC = () => {
       <section className="py-20 px-6 bg-white dark:bg-gray-600 dark:text-gray-100">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <h2 className="text-4xl font-semibold mb-6">Notre Mission</h2>
+            <h2 className="text-4xl font-semibold mb-6">Nos Convictions</h2>
             <p className="text-lg">
-              Notre mission est de fournir un soutien et des ressources aux communautés dans le besoin. Nous nous concentrons sur des domaines tels que l'éducation, la santé et les secours d'urgence pour aider ceux qui en ont le plus besoin. Avec votre soutien, nous pouvons faire une différence durable dans la vie des gens.
+              Fidèle à sa volonté humanitaire nous sommes une association qui se veut apolitique faisant fi des confessions religieuses, et en dehors de toute discrimination sociale. 
+Les limites d’action de l’association sont celles qui imposent notre indifférence ou une volonté de chacun de nous, à faire un geste non pas peut-être pour changer le monde mais pour contribuer à le rendre meilleur.
+
             </p>
           </div>
           <div className="w-full md:w-1/2">
@@ -165,7 +169,7 @@ const HomePage: React.FC = () => {
       {/* Latest Cause of Sadakat Section */}
       <section className="py-20 px-6 bg-gray-200  dark:bg-gray-600">
         <div className="container mx-auto text-center dark:text-gray-100">
-          <h2 className="text-4xl font-semibold mb-6">Dernières Causes de Sadakat</h2>
+          <h2 className="text-4xl font-semibold mb-6">Dernières Causes de AMES</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {causes.map((cause, index) => (
               <Cause

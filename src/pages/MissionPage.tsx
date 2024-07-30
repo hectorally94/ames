@@ -26,7 +26,7 @@ const MissionPage: React.FC = () => {
          <section className="py-20 px-6 bg-white dark:bg-gray-600 dark:text-gray-100">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                <h2 className="text-4xl font-semibold mb-6">Mission 1</h2>
+                <h2 className="text-4xl font-semibold mb-6">Nos Convictions</h2>
                 <p className="text-lg">
                   Notre mission est de fournir un soutien et des ressources aux communautés dans le besoin. Nous nous concentrons sur des domaines tels que l'éducation, la santé et les secours d'urgence pour aider ceux qui en ont le plus besoin. Avec votre soutien, nous pouvons faire une différence durable dans la vie des gens.
                 </p>
@@ -45,7 +45,7 @@ const MissionPage: React.FC = () => {
          <section className="py-20 px-6 bg-white dark:bg-gray-600 dark:text-gray-100">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                <h2 className="text-4xl font-semibold mb-6">Mission 1</h2>
+                <h2 className="text-4xl font-semibold mb-6">NOS ACTIONS</h2>
                 <p className="text-lg">
                   Notre mission est de fournir un soutien et des ressources aux communautés dans le besoin. Nous nous concentrons sur des domaines tels que l'éducation, la santé et les secours d'urgence pour aider ceux qui en ont le plus besoin. Avec votre soutien, nous pouvons faire une différence durable dans la vie des gens.
                 </p>
