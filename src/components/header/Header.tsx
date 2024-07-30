@@ -84,6 +84,9 @@ export default function Header() {
           <Link to="/" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white ">
             Accueil
           </Link>
+          <Link to="/actions" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
+            Actions
+          </Link>
           <Link to="/events" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
             Evenements
           </Link>
@@ -138,6 +141,12 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
                   Accueil
+                </Link>
+                <Link
+                  to="/actions"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
+                >
+                  Actions
                 </Link>
                 <Link
                   to="/events"
