@@ -9,6 +9,7 @@ import MyEventActivity from './pages/MyEventActivity'
 import MissionPage from './pages/MissionPage'
 import ActionsActivity from './pages/ActionsActivity'
 import DonatePage from './pages/DonatePage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <Route path="/actions" element={<ActionsActivity />} />
 
       <Route path="/donate" element={<DonatePage />} />
+      <Route path='/contact' element={<ContactPage/>}/>
     </Routes>
        {/* Footer Section */}
       
