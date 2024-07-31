@@ -1,11 +1,11 @@
-// components/Blog/FromOurBlog.tsx
+// components/Evenement/FromOurEvenement.tsx
 import React from 'react';
-import Evenement from './Evenement';
-import SidebarEvent from './SidebarEvent';
+import Evenement from '../components/evenements/Evenement';
+import SidebarEvent from '../components/evenements/SidebarEvent';
 
 const articles = [
   {
-    title: "Blog Title Here",
+    title: "Evenement Title Here",
     date: "Published on April 4, 2023",
     image: "https://images.unsplash.com/photo-1506157786151-b8491531f063",
     content: `
@@ -13,7 +13,7 @@ const articles = [
        `
   },
   {
-    title: "Blog Title Here",
+    title: "Evenement Title Here",
     date: "Published on April 4, 2023",
     image: "https://images.unsplash.com/photo-1506157786151-b8491531f063",
     content: `
@@ -21,7 +21,7 @@ const articles = [
        `
   },
   {
-    title: "Blog Title Here",
+    title: "Evenement Title Here",
     date: "Published on April 4, 2023",
     image: "https://images.unsplash.com/photo-1506157786151-b8491531f063",
     content: `
@@ -29,7 +29,7 @@ const articles = [
        `
   },
   {
-    title: "Blog Title Here",
+    title: "Evenement Title Here",
     date: "Published on April 4, 2023",
     image: "https://images.unsplash.com/photo-1506157786151-b8491531f063",
     content: `
@@ -37,7 +37,7 @@ const articles = [
        `
   },
   {
-    title: "Blog Title Here",
+    title: "Evenement Title Here",
     date: "Published on April 4, 2023",
     image: "https://images.unsplash.com/photo-1506157786151-b8491531f063",
     content: `
@@ -45,7 +45,7 @@ const articles = [
        `
   },
   {
-    title: "Blog Title Here",
+    title: "Evenement Title Here",
     date: "Published on April 4, 2023",
     image: "https://images.unsplash.com/photo-1506157786151-b8491531f063",
     content: `
@@ -53,7 +53,7 @@ const articles = [
        `
   },
   {
-    title: "Blog Title Here",
+    title: "Evenement Title Here",
     date: "Published on April 4, 2023",
     image: "https://images.unsplash.com/photo-1506157786151-b8491531f063",
     content: `

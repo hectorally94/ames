@@ -4,9 +4,10 @@ import Footer from './components/footer/Footer'
 import AboutPage from './pages/AboutPage'
 import HomePage from './pages/HomePage'
 import Header from './components/header/Header'
-import BlogActivity from './components/Blog/BlogActivity'
-import MyEventActivity from './components/evenements/MyEventActivity'
+import BlogActivity from './pages/BlogActivity'
+import MyEventActivity from './pages/MyEventActivity'
 import MissionPage from './pages/MissionPage'
+import ActionsActivity from './pages/ActionsActivity'
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
 
       <Route path="/mission" element={<MissionPage />} />
       <Route path="/events" element={<MyEventActivity />} />
+
+      <Route path="/actions" element={<ActionsActivity />} />
     </Routes>
        {/* Footer Section */}
       

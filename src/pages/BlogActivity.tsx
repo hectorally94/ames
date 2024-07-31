@@ -1,7 +1,7 @@
 // components/Blog/FromOurBlog.tsx
 import React from 'react';
-import Article from './Article';
-import Sidebar from './SideBar';
+import Article from '../components/Blog/Article';
+import Sidebar from '../components/Blog/SideBar';
 
 const articles = [
   {

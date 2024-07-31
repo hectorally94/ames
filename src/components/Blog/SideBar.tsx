@@ -56,7 +56,7 @@ const Sidebar: React.FC = () => {
             <a href="#" className="text-gray-700 hover:text-gray-900">Category 3</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="text-gray-700 hover:text-gray-900">Category 4</a>
+            <a href="#" className="text-gray-700 hover:text-gray-900">all</a>
           </li>
         </ul>
       </div>
