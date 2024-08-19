@@ -1,0 +1,21 @@
+{
+  "selectLanguage": "Dil Seçin",
+
+    "contact": {
+      "phone": "Telefon",
+      "email": "E-posta"
+    },
+    "menu": {
+      "volunteer": "Gönüllü Ol",
+      "donate": "Bağış Yap",
+      "home": "Ana Sayfa",
+      "actions": "Eylemler",
+      "events": "Etkinlikler",
+      "about": "Hakkımızda",
+      "mission": "Misyonumuz",
+      "blog": "Blogumuz",
+      "contact": "İletişim",
+      "login": "Giriş Yap"
+    }
+  }
+  

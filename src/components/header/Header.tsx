@@ -13,11 +13,14 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { PhoneIcon } from '@heroicons/react/20/solid'
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from '../../LanguageSwitcher'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrollDirection, setScrollDirection] = useState('up')
   const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,11 +54,11 @@ export default function Header() {
           </div>
           <div className="flex space-x-4">
             <Link to="/volunteer" className="flex items-center text-sm font-semibold text-gray-900 hover:text-indigo-600 dark:hover:text-gray-500">
-              <ArrowRightEndOnRectangleIcon className="h-5 w-5 text-gray-500 mr-1" />
-              Etre Volontaire
+              <ArrowRightEndOnRectangleIcon className="h-5 w-5 text-gray-500 mr-1" /> 
+               {t('menu.volunteer')}
             </Link>
             <Link to="/donate" className="bg-yellow-500 text-sm text-blue-900 px-2 py-2 rounded-lg font-semibold hover:bg-yellow-400 ">
-              Faire un don
+               {t('menu.donate')}
             </Link>
           </div>
         </div>
@@ -82,32 +85,34 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12 ">
           <Link to="/" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white ">
-            Accueil
+          {t('menu.home')}
           </Link>
           <Link to="/actions" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
-            Actions
+          {t('menu.actions')}
           </Link>
           <Link to="/events" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
-            Evenements
+             {t('menu.events')}
           </Link>
           <Link to="/about" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
-            À propos de nous
+             {t('menu.about')}
           </Link>
           <Link to="/mission" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
-            Notre Mission
+            {t('menu.mission')}
           </Link>
           <Link to="/blog" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
-            Notre Blog
+               {t('menu.blog')}  
           </Link>
           <Link to="/contact" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
-          Contact
+           {t('menu.contact')}
           </Link>
+          <LanguageSwitcher /> {/* Add the language switcher here */}
+
         </PopoverGroup>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link to="/login" className="flex items-center bg-indigo-600 dark:bg-gray-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-indigo-500 dark:hover:bg-gray-900">
             <UserIcon className="h-5 w-5 text-white mr-1" />
-            Connexion <span aria-hidden="true">&rarr;</span>
+            {t('menu.login')} <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
@@ -140,44 +145,45 @@ export default function Header() {
                   to="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  Accueil
+                  {t('menu.home')}
+
                 </Link>
                 <Link
                   to="/actions"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  Actions
+                  {t('menu.actions')}
                 </Link>
                 <Link
                   to="/events"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  Evenements
+                   {t('menu.events')}
                 </Link>
                 <Link
                   to="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  À propos de nous
+                   {t('menu.about')}
                 </Link>
                 <Link
                   to="/mission"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  Notre Mission
+                  {t('menu.mission')}
                 </Link>
                 <Link
                   to="/blog"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  Notre blog
+                   {t('menu.blog')}
                 </Link>
 
                 <Link
                   to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  Contact
+                    {t('menu.contact')}
                 </Link>
               </div>
               <div className="py-6">
@@ -185,7 +191,7 @@ export default function Header() {
                   to="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
                 >
-                  Log in
+                {t('menu.login')}
                 </Link>
               </div>
             </div>

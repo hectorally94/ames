@@ -1,0 +1,21 @@
+{
+    "selectLanguage": "Select Language",
+
+    "contact": {
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "menu": {
+      "volunteer": "Volunteer",
+      "donate": "Donate",
+      "home": "Home",
+      "actions": "Actions",
+      "events": "Events",
+      "about": "About Us",
+      "mission": "Mission",
+      "blog": "Blog",
+      "contact": "Contact",
+      "login": "Login"
+    }
+  }
+  

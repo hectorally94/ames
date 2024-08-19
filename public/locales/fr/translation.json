@@ -1,0 +1,21 @@
+{
+    "selectLanguage": "Choisir la langue",
+
+    "contact": {
+      "phone": "Téléphone",
+      "email": "Email"
+    },
+    "menu": {
+      "volunteer": "Etre Volontaire",
+      "donate": "Faire un don",
+      "home": "Accueil",
+      "actions": "Actions",
+      "events": "Evenements",
+      "about": "À propos de nous",
+      "mission": "Notre Mission",
+      "blog": "Notre Blog",
+      "contact": "Contact",
+      "login": "Connexion"
+    }
+  }
+  
