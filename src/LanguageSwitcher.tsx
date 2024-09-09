@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
+ import { useDispatch } from 'react-redux';
+ import { setLanguage } from './redux/languageSlice';
 
 const languages = [
     { code: 'en', name: 'English', flag: '🇬🇧' },
@@ -15,9 +17,12 @@ const languages = [
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
   const { t } = useTranslation();
+  const dispatch = useDispatch();
 
   const handleLanguageChange = (code: string) => {
-    console.log(`Changing language to: ${code}`);
+     // console.log(`Changing language to: ${code}`);
+    dispatch(setLanguage(code));
+
     i18n.changeLanguage(code).then(() => {
       console.log(`Language changed to: ${i18n.language}`);
     }).catch((err) => {
