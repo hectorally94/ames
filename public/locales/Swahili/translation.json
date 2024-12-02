@@ -1,0 +1,79 @@
+{
+    "selectLanguage": "Chagua Lugha",
+
+    "contact": {
+      "phone": "Simu",
+      "email": "Barua pepe"
+    },
+    "menu": {
+      "volunteer": "Kuwa Mshiriki",
+      "donate": "Toa Mchango",
+      "home": "Nyumbani",
+      "doctor": "Mwalimu",
+
+      "actions": "Matendo",
+      "events": "Matukio",
+      "about": "Kuhusu Sisi",
+      "mission": "Dhamira Yetu",
+      "blog": "Blogu Yetu",
+      "contact": "Mawasiliano",
+      "login": "Ingia"
+    },
+    
+      "post": {
+
+        "Goal": "Lengo",
+        "Raised": "Zilizokusanywa",
+        "Type of Events": "Aina za Matukio",
+        "Type of Actions": "Aina za Hatua",
+        "Categories": "Makundi",
+        "Make a donation now": "Fanya mchango sasa",
+        "Our Impact": "Madhara Yetu",
+        "Participate": "Shiriki",
+        "Become a Volunteer": "kuwa Mvolontari",
+        "Success Stories": "Hadithi za Mafanikio",
+        "Latest Actions of AMES": "Matukio ya Hivi Punde ya AMES",
+        "Our Gallery": "Ghala Letu",
+        "Meet Our Team": "Kutana na Timu Yetu",
+        "Our Expert Volunteers": "Volontari Wetu Wanaobobea",
+        "Latest Events of AMES": "Matukio ya Hivi Punde ya AMES",
+        "Our Events":"Matukio Yetu",
+
+        "Our Blog": "Blog Yetu",
+        "Latest News": "Habari za Hivi Punde",
+        "Our Main Partners": "Wadau Wetu Wakuu",
+        "Donating in the Name of Allah": "Kutoa kwa Jina la Allah",
+        "Contact the Association": "Wasiliana na Shirika",
+        "Your name and surname* (Mandatory)": "Jina lako na jina la familia* (Lazima)",
+        "Your email* (Mandatory)": "Barua pepe yako* (Lazima)",
+        "Your phone* (Mandatory)": "Nambari yako ya simu* (Lazima)",
+        "Subject* (Mandatory)": "Kichwa cha habari* (Lazima)",
+        "Your message* (Mandatory)": "Ujumbe wako* (Lazima)",
+        "Send": "Tuma",
+        "Sending...": "Inatuma...",
+        "Thank you": "Asante",
+        "We will contact you later.": "Tutawasiliana nawe baadaye.",
+        "Close": "Funga",
+        "Add a Volunteer": "Ongeza Mvolontari",
+        "Full Name": "Jina Kamili",
+        "Phone Number": "Nambari ya Simu",
+        "Address 1": "Anwani 1",
+        "Address 2": "Anwani 2",
+        "Submit": "Wasilisha",
+        "Submitting...": "Inawasilisha...",
+        "Volunteer added successfully!": "Mvolontari ameongezwa kwa mafanikio!",
+        "Failed to add volunteer.": "Kushindwa kuongeza mvolontari.",
+        "Donate Now": "Fanya Mchango Sasa",
+        "Name": "Jina",
+        "Email": "Barua Pepe",
+        "Donation Amount": "Kiasi cha Mchango",
+        "Message": "Ujumbe",
+        "Processing...": "Inachakata...",
+        "Your donation was successful. We will contact you later.": "Mchango wako umefaulu. Tutawasiliana nawe baadaye.",
+        "Error": "Kosa",
+        "Something went wrong. Please try again later.": "Kuna tatizo limetokea. Tafadhali jaribu tena baadaye."
+      }
+    
+    
+  }
+  

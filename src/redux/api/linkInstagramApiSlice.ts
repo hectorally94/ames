@@ -1,6 +1,6 @@
 import apiServices from "../../common/apiServices";
- import { Language as LinkInstagram } from "../../components/amesComponents/language/Model";
-
+import { Language as LinkInstagram } from "../languageSlice";
+ 
 // Define the tag types
 export const LinkInstagram_TAGS = ['LinkInstagram'] as const;
 
@@ -25,7 +25,7 @@ const linkInstagramApiSlice = apiServices
           url: `/linkInstagram/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: LinkInstagram_TAGS[0], id }], // Tag for individual LinkInstagram
+        providesTags: (_result, _error, id) => [{ type: LinkInstagram_TAGS[0], id }], // Tag for individual LinkInstagram
       }),
       // Endpoint to create a new LinkInstagram
       createLinkInstagram: builder.mutation<LinkInstagram, Partial<LinkInstagram>>({

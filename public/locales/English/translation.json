@@ -1,0 +1,79 @@
+{
+    "selectLanguage": "Select Language",
+
+    "contact": {
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "menu": {
+      "volunteer": "Volunteer",
+      "donate": "Donate",
+      "home": "Home",
+      "doctor": "Doctor",
+
+      "actions": "Actions",
+      "events": "Events",
+      "about": "About Us",
+      "mission": "Mission",
+      "blog": "Blog",
+      "contact": "Contact",
+      "login": "Login"
+    },
+
+      "post": {
+        "Goal":"Goal",
+        "Raised":"Raised",
+        "Type of Events": "Event Types",
+        "Type of Actions": "Action Types",
+        "Categories": "Categories",
+        "Make a donation now": "Donate Now",
+        "Our Impact": "Our Impact",
+        "Participate": "Participate",
+        "Become a Volunteer": "Become a Volunteer",
+        "Success Stories": "Success Stories",
+        "Latest Actions of AMES": "Latest AMES Activities",
+        "Our Gallery": "Our Gallery",
+        "Meet Our Team": "Meet Our Team",
+        "Our Expert Volunteers": "Our Expert Volunteers",
+        "Latest Events of AMES": "Latest AMES Events",
+ 
+        "Our Blog": "Our Blog",
+        "Latest News": "Latest News",
+        "Our Events": "Our Events",
+
+        "Our Main Partners": "Our Main Partners",
+        "Donating in the Name of Allah": "Donate in the Name of Allah",
+        "Contact the Association": "Contact the Association",
+        "Your name and surname* (Mandatory)": "Your First and Last Name* (Required)",
+        "Your email* (Mandatory)": "Your Email Address* (Required)",
+        "Your phone* (Mandatory)": "Your Phone Number* (Required)",
+        "Subject* (Mandatory)": "Subject* (Required)",
+        "Your message* (Mandatory)": "Your Message* (Required)",
+        "Send": "Send",
+        "Sending...": "Sending...",
+        "Thank you": "Thank You",
+        "We will contact you later.": "We will get in touch with you later.",
+        "Close": "Close",
+        "Add a Volunteer": "Add a Volunteer",
+        "Full Name": "Full Name",
+        "Phone Number": "Phone Number",
+        "Address 1": "Address Line 1",
+        "Address 2": "Address Line 2",
+        "Submit": "Submit",
+        "Submitting...": "Submitting...",
+        "Volunteer added successfully!": "Volunteer added successfully!",
+        "Failed to add volunteer.": "Failed to add volunteer.",
+        "Donate Now": "Donate Now",
+        "Name": "Name",
+        "Email": "Email",
+        "Donation Amount": "Donation Amount",
+        "Message": "Message",
+        "Processing...": "Processing...",
+        "Your donation was successful. We will contact you later.": "Your donation was successful. We will contact you later.",
+        "Error": "Error",
+        "Something went wrong. Please try again later.": "Something went wrong. Please try again later."
+      }
+    
+    
+  }
+  

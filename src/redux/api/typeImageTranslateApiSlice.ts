@@ -37,13 +37,15 @@ const typeImageTranslateApiSlice = apiServices
           url: `/type-image-translate/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: TYPE_IMAGE_TRANSLATE_TAGS[0], id }], // Tag for individual type image translate
+        providesTags: (_result, _error, id) => [{ type: TYPE_IMAGE_TRANSLATE_TAGS[0], id }], // Tag for individual type image translate
       }),
+      
       // Endpoint to fetch all type image translate DTOs
-      getAllTypeImageTranslateDtos: builder.query<TypeImageTranslateDto[], void>({
-        query: () => ({
+      getAllTypeImageTranslateDtos: builder.query<TypeImageTranslateDto[],  string>({
+        query: (name) => ({
           url: '/type-image-translateDtoAll',
           method: 'GET',
+          params: { name  },
         }),
         providesTags: [TYPE_IMAGE_TRANSLATE_TAGS[0]], // Tag for the list of type image translate DTOs
       }),

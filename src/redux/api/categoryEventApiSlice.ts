@@ -30,7 +30,7 @@ const categoryEventApiSlice = apiServices
           url: `/category-events/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: CATEGORY_EVENT_TAGS[0], id }], // Tag for individual category event
+        providesTags: (_result, _error, id) => [{ type: CATEGORY_EVENT_TAGS[0], id }], // Tag for individual category event
       }),
       // Endpoint to create a new category event
       createCategoryEvent: builder.mutation<CategoryEvent, CategoryEvent>({

@@ -41,7 +41,7 @@ const storeImageApiSlice = imgApiServices
           url: `/image_store_images/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: Image_store_images_TAGS[0], id }], // Tag for individual Image_store_images
+        providesTags: (_result, _error, id) => [{ type: Image_store_images_TAGS[0], id }], // Tag for individual Image_store_images
       }),
      // Endpoint to create a  new Image_store_images
      CreateImage_store_images: builder.mutation<Image_store_images, FormData>({

@@ -5,8 +5,7 @@ import OverlayLoader from '../common/Loader/OverlayLoader';
 import ErrorLoader from '../common/Loader/ErrorLoader';
 import { useSelector } from 'react-redux';
 import { RootState } from '../common/store';
-import i18n from '../i18n';
-
+ 
 interface MY_Response {
   message: string;
   data: AboutUsDTO[];
@@ -16,10 +15,8 @@ const AboutPage: React.FC = () => {
   const selectedLanguage = useSelector((state: RootState) => state.language.language); // Get selected language from Redux store
 
   //const { data, isLoading, error } = useGetAboutUsByLanguageQuery(i18n.language);
-    // Fetch data based on the selected language
-    const { data, isLoading,isFetching, error } = useGetAboutUsByLanguageQuery(i18n.language, {
-      skip: !i18n.language, // Skip query if no language is available
-    });
+    // Fetch data based  on the selected language
+    const { data, isLoading,isFetching, error } = useGetAboutUsByLanguageQuery(selectedLanguage);
   const { data: defaultData } = useGetAboutUsByLanguageQuery('French'); // Fetch default language data (English)
 
   const [aboutContent, setAboutContent] = useState<AboutUsDTO[]>([]);
@@ -56,13 +53,17 @@ const AboutPage: React.FC = () => {
     return <div>No content available</div>;
   }
 
-  return (
-    <ComponentOne 
-      title={aboutContent[0]?.title || 'Default Title'}
-      content={aboutContent[0]?.content || 'Default Content'}
-      imageData={aboutContent[0]?.imageData || ''} // Adjust based on your imageData handling
-    />
-  );
+  return (<div>
+    {aboutContent.map((item, index) => (
+      <ComponentOne 
+        key={index}
+        title={item.title || 'Default Title'}
+        content={item.content || 'Default Content'}
+        imageData={item.imageData || ''}
+      />
+    ))}
+  </div>
+);
 };
 
 export default AboutPage;

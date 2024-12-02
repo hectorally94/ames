@@ -1,6 +1,6 @@
 import apiServices from "../../common/apiServices";
-import { Language as LinkVideos } from "../../components/amesComponents/language/Model";
-
+import { Language as LinkVideos } from "../languageSlice";
+ 
 // Define the tag types
 export const LinkVideos_TAGS = ['LinkVideos'] as const;
 
@@ -25,7 +25,7 @@ const linkVideoSlice = apiServices
           url: `/linkVideos/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: LinkVideos_TAGS[0], id }], // Tag for individual LinkVideos
+        providesTags: (_result, _error, id) => [{ type: LinkVideos_TAGS[0], id }], // Tag for individual LinkVideos
       }),
       // Endpoint to create a new LinkVideos
       createLinkVideos: builder.mutation<LinkVideos, Partial<LinkVideos>>({

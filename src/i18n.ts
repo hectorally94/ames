@@ -9,8 +9,8 @@ i18n
   .use(LanguageDetector) // Detect language from the browser
   .use(initReactI18next) // Pass the i18n instance to react-i18next
   .init({
-    fallbackLng: 'en', // Fallback language if the detected language isn't available
-    supportedLngs: ['en', 'fr', 'sw', 'ar', 'tr', 'rn'], // Supported languages
+    fallbackLng: 'English', // Fallback language if the detected language isn't available
+    supportedLngs: ['English', 'French', 'Swahili', 'Arabic', 'Turkish', 'Kirundi'], // Supported languages
     debug: true, // Set to false in production
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json', // Path to translation files

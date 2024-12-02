@@ -41,7 +41,7 @@ const storeProfileApiSlice = imgApiServices
           url: `/image_profilesimages/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: image_profilesimages_TAGS[0], id }], // Tag for individual image_profilesimages
+        providesTags: (_result, _error, id) => [{ type: image_profilesimages_TAGS[0], id }], // Tag for individual image_profilesimages
       }),
      // Endpoint to create a  new image_profilesimages
      CreateImage_profilesimages: builder.mutation<image_profilesimages, FormData>({

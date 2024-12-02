@@ -41,7 +41,7 @@ const storePartenaireApiSlice = imgApiServices
           url: `/image_partenaireimages/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: Image_partenaireimages_TAGS[0], id }], // Tag for individual Image_partenaireimages
+        providesTags: (_result, _error, id) => [{ type: Image_partenaireimages_TAGS[0], id }], // Tag for individual Image_partenaireimages
       }),
      // Endpoint to create a  new Image_partenaireimages
      CreateImage_partenaireimages: builder.mutation<Image_partenaireimages, FormData>({

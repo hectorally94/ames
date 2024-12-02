@@ -30,7 +30,7 @@ const categoryBlogApiSlice = apiServices
           url: `/category-blogs/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: CATEGORY_BLOG_TAGS[0], id }], // Tag for individual category blog
+        providesTags: (_result, _error, id) => [{ type: CATEGORY_BLOG_TAGS[0], id }], // Tag for individual category blog
       }),
       // Endpoint to create a new category blog
       createCategoryBlog: builder.mutation<CategoryBlog, CategoryBlog>({

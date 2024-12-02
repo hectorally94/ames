@@ -1,5 +1,5 @@
 import apiServices from "../../common/apiServices";
-import { Language as LinkFaceBook } from "../../components/amesComponents/language/Model";
+import { Language as LinkFaceBook} from "../languageSlice";
  
 
 // Define the tag types
@@ -26,7 +26,7 @@ const linkFaceApiSlice = apiServices
           url: `/linkFaceBook/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: LinkFaceBook_TAGS[0], id }], // Tag for individual LinkFaceBook
+        providesTags: (_result, _error, id) => [{ type: LinkFaceBook_TAGS[0], id }], // Tag for individual LinkFaceBook
       }),
       // Endpoint to create a new LinkFaceBook
       createLinkFaceBook: builder.mutation<LinkFaceBook, Partial<LinkFaceBook>>({

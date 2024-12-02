@@ -14,6 +14,14 @@ export interface CategoryActionTranslateDto {
   languageName: string;
 }
 
+
+// Define the interfaces for Event and related types
+interface PaginatedResponse<T> {
+  data: T[];
+  currentPage: number;
+  totalItems: number;
+  totalPages: number;
+}
 // Define the tag types
 export const CATEGORY_ACTION_TRANSLATE_TAGS = ['CategoryActionTranslate'] as const;
 
@@ -24,21 +32,22 @@ const categoryActionTranslateApiSlice = apiServices
   })
   .injectEndpoints({
     endpoints: (builder) => ({
-      // Endpoint to fetch all category action translates
-      getAllCategoryActionTranslates: builder.query<CategoryActionTranslate[], void>({
-        query: () => ({
-          url: '/category_action_translate',
-          method: 'GET',
-        }),
-        providesTags: [CATEGORY_ACTION_TRANSLATE_TAGS[0]], // Tag for the list of category action translates
+       // Endpoint to fetch paginated actions with optional title filtering
+       getAllCategoryActionTranslates: builder.query<PaginatedResponse<CategoryActionTranslateDto>, { name?: string; page?: number; size?: number; sort?: string }>({
+      query: ({ name = '', page = 0, size = 15, sort = 'id,desc' }) => ({
+        url: '/category_action_translateDtoAll',
+        params: { name, page, size, sort },
+        method: 'GET',
       }),
+      providesTags: [CATEGORY_ACTION_TRANSLATE_TAGS[0]], // Tag for the list of category action translates
+    }), 
       // Endpoint to fetch a specific category action translate by ID
       getCategoryActionTranslateById: builder.query<CategoryActionTranslate, number>({
         query: (id) => ({
           url: `/category_action_translate/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: CATEGORY_ACTION_TRANSLATE_TAGS[0], id }], // Tag for individual category action translate
+        providesTags: (_result, _error, id) => [{ type: CATEGORY_ACTION_TRANSLATE_TAGS[0], id }], // Tag for individual category action translate
       }),
       // Endpoint to create a new category action translate
       createCategoryActionTranslate: builder.mutation<CategoryActionTranslate, { languageId: number; categoryActionTranslate: CategoryActionTranslate }>({

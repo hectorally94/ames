@@ -45,7 +45,7 @@ const autreTypeApiSlice = apiServices
           url: `/type_autre_translate/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: AUTRE_TYPE_TAGS[0], id }], // Tag for individual type action
+        providesTags: (_result, _error, id) => [{ type: AUTRE_TYPE_TAGS[0], id }], // Tag for individual type action
       }),
       // Endpoint to create a new type action
       createTypeTypeAutre: builder.mutation<AutreType, { languageId: number; data: Partial<AutreType> }>({

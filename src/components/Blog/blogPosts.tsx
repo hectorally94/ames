@@ -1,55 +1,86 @@
 // components/Blog/FromOurBlog.tsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BlogPostCard from './BlogPostCard';
-
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../common/store';
+import { useGetPaginatedBlogsLastQuery } from '../../redux/api/blogsApiSlice';
+ 
 interface BlogPost {
+  id: number;
   title: string;
-  excerpt: string;
-  author: string;
-  date: string;
-  imageUrl: string; // Add imageUrl to the blog post type
+  objectif: string;
+  recolte: string;
+  description: string;
+  date:string;
+
+  categoryBlogTranslateId: number;
+  categoryBlogTranslate: string;
+
+  clanguageId: number;
+  clanguageName: string;
+
+  storeImageId: number;
+  storeImageName: string;
+  storeImageType: string;
+   imagedata: any;
 }
+ 
 
-const blogPosts: BlogPost[] = [
-  {
-    title: 'Best and Less Ont Publié Leur Liste de Fournisseurs',
-    excerpt: 'Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications.',
-    author: 'Lily Anne',
-    date: '12 Février 2021',
-    imageUrl: 'https://c7.alamy.com/comp/D6N1A1/lodwar-kenya-leah-imoru-lobar-staff-member-of-the-childrens-charity-D6N1A1.jpg', // Exemple d'URL d'image
-  },
-  {
-    title: 'Best and Less Ont Publié Leur Liste de Fournisseurs',
-    excerpt: 'Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications.',
-    author: 'Lily Anne',
-    date: '12 Février 2021',
-    imageUrl: 'https://c7.alamy.com/comp/D6N1A1/lodwar-kenya-leah-imoru-lobar-staff-member-of-the-childrens-charity-D6N1A1.jpg', // Exemple d'URL d'image
-  },
-  {
-    title: 'Best and Less Ont Publié Leur Liste de Fournisseurs',
-    excerpt: 'Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications.',
-    author: 'Lily Anne',
-    date: '12 Février 2021',
-    imageUrl: 'https://c7.alamy.com/comp/D6N1A1/lodwar-kenya-leah-imoru-lobar-staff-member-of-the-childrens-charity-D6N1A1.jpg', // Exemple d'URL d'image
-  },
-];
-
+interface MyResponse {
+  message: string;
+  data: BlogPost[];
+}  
 
 const FromOurBlog: React.FC = () => {
+  const { t } = useTranslation();
+
+
+
+  const [currentPage, _setCurrentPage] = useState(0);
+  const [itemsPerPage, _setItemsPerPage] = useState(3);
+  const [sort, _setSort] = useState('id,desc'); // Default sort as a single string
+
+ 
+  const selectedLanguage = useSelector((state: RootState) => state.language.language); // Get selected language from Redux store
+  const { data } = useGetPaginatedBlogsLastQuery({ languageName:selectedLanguage, page: currentPage, size: itemsPerPage, sort });
+  
+  const { data:defaultData } = useGetPaginatedBlogsLastQuery({ languageName:'French', page: currentPage, size: itemsPerPage, sort });
+  const [typeContent, setTypeContent] = useState<BlogPost[]>([]);
+
+  useEffect(() => {
+    if (data) {
+      const fetchedData = (data as unknown as MyResponse)?.data || [];
+      
+      if (fetchedData.length === 0 && selectedLanguage !== 'French') {
+        // If no content is found for the selected language, fall back to the default language (English)
+        const fallbackData = (defaultData as unknown as MyResponse)?.data || [];
+        setTypeContent(fallbackData);
+      } else {
+        setTypeContent(fetchedData);
+      }
+    } else if (defaultData) {
+      // In case the initial data request fails but fallback data is available
+      const fallbackData = (defaultData as unknown as MyResponse)?.data || [];
+      setTypeContent(fallbackData);
+    }
+  }, [data, defaultData, selectedLanguage]);
+
   return (
     <section className="py-20 px-6 bg-gray-100 dark:bg-gray-600">
       <div className="container mx-auto text-center dark:text-white">
-        <h2 className="text-4xl font-semibold mb-6">From Our Blog</h2>
-        <h3 className="text-2xl font-semibold mb-6">Latest News</h3>
+        <h2 className="text-4xl font-semibold mb-6 font-slab">  {t('post.Our Blog') || ''}
+        </h2>
+        <h3 className="text-2xl font-semibold mb-6 font-slab">  {t('post.Latest News') || ''}
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogPosts.map((post, index) => (
+          {typeContent.map((post, index) => (
             <BlogPostCard
               key={index}
-              title={post.title}
-              excerpt={post.excerpt}
-              author={post.author}
-              date={post.date}
-              imageUrl={post.imageUrl} // Pass the image URL to BlogPostCard
+              title={post.title}   
+              excerpt={post.description}
+               date={post.date}
+              imageUrl={post.imagedata} // Pass the image URL to BlogPostCard
             />
           ))}
         </div>

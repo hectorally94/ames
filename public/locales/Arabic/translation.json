@@ -1,0 +1,89 @@
+{
+    "selectLanguage": "اختر اللغة",
+
+    "contact": {
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني"
+    },
+    "menu": {
+      "volunteer": "كن متطوعًا",
+      "donate": "تبرع الآن",
+      "home": "الرئيسية",
+      "doctor": "طبيب",
+      "actions": "الأعمال",
+      "events": "الفعاليات",
+      "about": "من نحن",
+      "mission": "مهمتنا",
+      "blog": "مدونتنا",
+      "contact": "اتصل بنا",
+      "login": "تسجيل الدخول"
+    },
+
+    
+      "post": {
+        "Goal":"الهدف",
+        "Raised":"مرفوع",
+        "Type of Events": "نوع الأحداث",
+        "Type of Actions": "نوع الإجراءات",
+        "Categories": "الفئات",
+        "Make a donation now": "تبرع الآن",
+        "Our Impact": "تأثيرنا",
+        "Participate": "شارك",
+        "Become a Volunteer": "كن متطوعًا",
+        "Success Stories": "قصص النجاح",
+        "Latest Actions of AMES": "أحدث أعمال AMES",
+        "Our Gallery": "معرضنا",
+        "Meet Our Team": "قابل فريقنا",
+        "Our Expert Volunteers": "متطوعونا الخبراء",
+        "Latest Events of AMES": "أحدث فعاليات AMES",
+        "Our Blog": "مدونتنا",
+        "Our Events":"فعالياتنا",
+        "Latest News": "آخر الأخبار",
+        "Our Main Partners": "شركاؤنا الرئيسيون",
+        "Donating in the Name of Allah": "التبرع باسم الله",
+        
+        "Contact the Association": "الاتصال بالجمعية",
+        "Your name and surname* (Mandatory)": "اسمك ولقبك* (إلزامي)",
+        "Your email* (Mandatory)": "بريدك الإلكتروني* (إلزامي)",
+        "Your phone* (Mandatory)": "رقم هاتفك* (إلزامي)",
+        "Subject* (Mandatory)": "الموضوع* (إلزامي)",
+        "Your message* (Mandatory)": "رسالتك* (إلزامي)",
+        "Send": "إرسال",
+        "Sending...": "جاري الإرسال...",
+        "Thank you": "شكرًا لك",
+        "We will contact you later.": "سنتواصل معك لاحقًا.",
+        "Close": "أغلق",
+        "Add a Volunteer": "إضافة متطوع",
+        "Full Name": "الاسم الكامل",
+        "Phone Number": "رقم الهاتف",
+        "Address 1": "العنوان 1",
+        "Address 2": "العنوان 2",
+        "Submit": "إرسال",
+        "Submitting...": "جاري الإرسال...",
+        "Volunteer added successfully!": "تم إضافة المتطوع بنجاح!",
+        "Failed to add volunteer.": "فشل في إضافة المتطوع.",
+        "Donate Now": "تبرع الآن",
+        "Name": "الاسم",
+        "Email": "البريد الإلكتروني",
+        "Donation Amount": "قيمة التبرع",
+        "Message": "رسالة",
+        "Processing...": "جاري المعالجة...",
+        "Your donation was successful. We will contact you later.": "تم التبرع بنجاح. سنتواصل معك لاحقًا.",
+        "Error": "خطأ",
+        "Something went wrong. Please try again later.": "حدث خطأ ما. يرجى المحاولة لاحقًا."
+      }
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+    
+  
+  

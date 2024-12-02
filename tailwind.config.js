@@ -7,8 +7,12 @@ export default {
         'dark-bg': '#1a202c', // Customize as needed
         'dark-text': '#edf2f7', // Customize as needed
       },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'], // Default font family
+        slab: ['Roboto Slab', 'serif'], // Custom slab font family
+      },
     },
   },
-  darkMode: 'media', //class if you prefer customize the code or 'media' if you prefer automatic based on user's system preference
+  darkMode: 'media', // Change to 'class' if you prefer manual dark mode control
   plugins: [],
 }

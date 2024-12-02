@@ -30,7 +30,7 @@ const categoryActionApiSlice = apiServices
           url: `/category-actions/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: CATEGORY_ACTION_TAGS[0], id }], // Tag for individual category action
+        providesTags: (_result, _error, id) => [{ type: CATEGORY_ACTION_TAGS[0], id }], // Tag for individual category action
       }),
       // Endpoint to create a new category action
       createCategoryAction: builder.mutation<CategoryAction, CategoryAction>({

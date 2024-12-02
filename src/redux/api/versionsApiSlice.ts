@@ -30,7 +30,7 @@ const versionsApiSlice = apiServices
           url: `/versions/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: VERSIONS_TAGS[0], id }], // Tag for individual version
+        providesTags: (_result, _error, id) => [{ type: VERSIONS_TAGS[0], id }], // Tag for individual version
       }),
       // Endpoint to create a new version
       createVersion: builder.mutation<Versions, Partial<Versions>>({

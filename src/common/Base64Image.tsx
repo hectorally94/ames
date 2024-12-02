@@ -7,7 +7,8 @@ interface Base64ImageProps {
 
 const Base64Image: React.FC<Base64ImageProps> = ({ base64String }) => {
   // Ensure the base64 string is a valid image format
-  const imageSrc = `data:image/jpeg;base64,${base64String}`;
+  //const imageSrc = `data:image/jpeg;base64,${base64String}`;
+  const imageSrc = `${base64String}`;
 
   return (
     <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">

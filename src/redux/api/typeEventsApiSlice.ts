@@ -30,7 +30,7 @@ const typeEventsApiSlice = apiServices
           url: `/type-events/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: TYPE_EVENT_TAGS[0], id }], // Tag for individual type event
+        providesTags: (_result, _error, id) => [{ type: TYPE_EVENT_TAGS[0], id }], // Tag for individual type event
       }),
       // Endpoint to create a new type event
       createTypeEvent: builder.mutation<TypeEvent, Partial<TypeEvent>>({

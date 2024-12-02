@@ -1,6 +1,6 @@
 import apiServices from "../../common/apiServices";
-import { Language } from "../../components/amesComponents/language/Model";
-
+import { Language } from "../languageSlice";
+ 
 // Define the tag types
 export const LANGUAGE_TAGS = ['Language'] as const;
 
@@ -25,7 +25,7 @@ const languageApiSlice = apiServices
           url: `/languages/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: LANGUAGE_TAGS[0], id }], // Tag for individual language
+        providesTags: (_result, _error, id) => [{ type: LANGUAGE_TAGS[0], id }], // Tag for individual language
       }),
       // Endpoint to create a new language
       createLanguage: builder.mutation<Language, Partial<Language>>({

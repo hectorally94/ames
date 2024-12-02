@@ -30,7 +30,7 @@ const typeActionsApiSlice = apiServices
           url: `/type-actions/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: TYPE_ACTION_TAGS[0], id }], // Tag for individual type action
+        providesTags: (_result, _error, id) => [{ type: TYPE_ACTION_TAGS[0], id }], // Tag for individual type action
       }),
       // Endpoint to create a new type action
       createTypeAction: builder.mutation<TypeAction, Partial<TypeAction>>({

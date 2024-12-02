@@ -34,7 +34,7 @@ const volontairesApiSlice = apiServices
           url: `/voluntaires/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: VOLUNTAIRES_TAGS[0], id }], // Tag for individual volontaire
+        providesTags: (_result, _error, id) => [{ type: VOLUNTAIRES_TAGS[0], id }], // Tag for individual volontaire
       }),
       // Endpoint to create a new volontaire
       createVolontaire: builder.mutation<Voluntaires, Partial<Voluntaires>>({

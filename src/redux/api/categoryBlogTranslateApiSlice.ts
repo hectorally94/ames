@@ -2,17 +2,23 @@ import apiServices from "../../common/apiServices";
 
 // Define the interfaces for CategoryBlogTranslate and CategoryBlogTranslateDto
 export interface CategoryBlogTranslate {
-  id: number;
+  id: any;
   categoryBlogTranslate: string;
 }
 
 export interface CategoryBlogTranslateDto {
-  id: number;
+  id: any;
   categoryBlogTranslate: string;
-  languageId: number;
+  languageId: any;
   languageName: string;
 }
-
+// Define the interfaces for Event and related types
+interface PaginatedResponse<T> {
+  data: T[];
+  currentPage: any;
+  totalItems: any;
+  totalPages: any;
+}
 // Define the tag types
 export const CATEGORY_BLOG_TRANSLATE_TAGS = ['CategoryBlogTranslate'] as const;
 
@@ -23,21 +29,22 @@ const categoryBlogTranslateApiSlice = apiServices
   })
   .injectEndpoints({
     endpoints: (builder) => ({
-      // Endpoint to fetch all category blog translates
-      getAllCategoryBlogTranslates: builder.query<CategoryBlogTranslate[], void>({
-        query: () => ({
-          url: '/category-blog-translates',
+       // Endpoint to fetch paginated actions with optional title filtering
+       getAllCategoryBlogTranslates: builder.query<PaginatedResponse<CategoryBlogTranslateDto>, { name?: string; page?: any; size?: any; sort?: string }>({
+        query: ({ name = '', page = 0, size = 15, sort = 'id,desc' }) => ({
+          url: '/category-blog-translatesDtoAll',
+          params: { name, page, size, sort },
           method: 'GET',
         }),
         providesTags: [CATEGORY_BLOG_TRANSLATE_TAGS[0]], // Tag for the list of category blog translates
-      }),
+      }),  
       // Endpoint to fetch a specific category blog translate by ID
-      getCategoryBlogTranslateById: builder.query<CategoryBlogTranslate, number>({
+      getCategoryBlogTranslateById: builder.query<CategoryBlogTranslate, any>({
         query: (id) => ({
           url: `/category-blog-translates/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: CATEGORY_BLOG_TRANSLATE_TAGS[0], id }], // Tag for individual category blog translate
+        providesTags: (_result, _error, id) => [{ type: CATEGORY_BLOG_TRANSLATE_TAGS[0], id }], // Tag for individual category blog translate
       }),
       // Endpoint to fetch all category blog translates DTOs
       getAllCategoryBlogTranslateDtos: builder.query<CategoryBlogTranslateDto[], void>({
@@ -56,7 +63,7 @@ const categoryBlogTranslateApiSlice = apiServices
         providesTags: [CATEGORY_BLOG_TRANSLATE_TAGS[0]], // Tag for the list of all category blog translates
       }),
       // Endpoint to create a new category blog translate
-      createCategoryBlogTranslate: builder.mutation<CategoryBlogTranslate, { languageId: number; data: CategoryBlogTranslate }>({
+      createCategoryBlogTranslate: builder.mutation<CategoryBlogTranslate, { languageId: any; data: CategoryBlogTranslate }>({
         query: ({ languageId, data }) => ({
           url: `/${languageId}/category-blog-translates`,
           method: 'POST',
@@ -65,7 +72,7 @@ const categoryBlogTranslateApiSlice = apiServices
         invalidatesTags: [CATEGORY_BLOG_TRANSLATE_TAGS[0]], // Invalidate the entire list of category blog translates
       }),
       // Endpoint to update an existing category blog translate by ID
-      updateCategoryBlogTranslate: builder.mutation<CategoryBlogTranslate, { id: number; data: Partial<CategoryBlogTranslate> }>({
+      updateCategoryBlogTranslate: builder.mutation<CategoryBlogTranslate, { id: any; data: Partial<CategoryBlogTranslate> }>({
         query: ({ id, data }) => ({
           url: `/category-blog-translates/${id}`,
           method: 'PUT',
@@ -74,7 +81,7 @@ const categoryBlogTranslateApiSlice = apiServices
         invalidatesTags: [CATEGORY_BLOG_TRANSLATE_TAGS[0]], // Invalidate the entire list of category blog translates
       }),
       // Endpoint to delete a category blog translate by ID
-      deleteCategoryBlogTranslate: builder.mutation<void, number>({
+      deleteCategoryBlogTranslate: builder.mutation<void, any>({
         query: (id) => ({
           url: `/category-blog-translates/${id}`,
           method: 'DELETE',

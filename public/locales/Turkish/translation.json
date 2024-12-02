@@ -1,0 +1,78 @@
+{
+  "selectLanguage": "Dil Seçin",
+
+    "contact": {
+      "phone": "Telefon",
+      "email": "E-posta"
+    },
+    "menu": {
+      "volunteer": "Gönüllü Ol",
+      "donate": "Bağış Yap",
+      "home": "Ana Sayfa",
+      "doctor": "doktor",
+      "actions": "Eylemler",
+      "events": "Etkinlikler",
+      "about": "Hakkımızda",
+      "mission": "Misyonumuz",
+      "blog": "Blogumuz",
+      "contact": "İletişim",
+      "login": "Giriş Yap"
+    },
+    
+      "post": {
+
+        "Goal": "Hedef",
+        "Raised": "Toplanan",
+        "Type of Events": "Etkinlik Türleri",
+        "Type of Actions": "Eylem Türleri",
+        "Categories": "Kategoriler",
+        "Make a donation now": "Şimdi bağış yap",
+        "Our Impact": "Etkimiz",
+        "Participate": "Katıl",
+        "Become a Volunteer": "Gönüllü Ol",
+        "Success Stories": "Başarı Hikayeleri",
+        "Latest Actions of AMES": "AMES'in Son Eylemleri",
+        "Our Gallery": "Galeriğimiz",
+        "Meet Our Team": "Ekibimizi Tanıyın",
+        "Our Expert Volunteers": "Uzman Gönüllülerimiz",
+        "Latest Events of AMES": "AMES'in Son Etkinlikleri",
+        "Our Events":"Etkinliklerimiz",
+
+        "Our Blog": "Blogumuz",
+        "Latest News": "Son Haberler",
+        "Our Main Partners": "Ana Ortaklarımız",
+        "Donating in the Name of Allah": "Allah'ın Adına Bağış Yapmak",
+        "Contact the Association": "Dernekle İletişime Geç",
+        "Your name and surname* (Mandatory)": "Adınız ve Soyadınız* (Zorunlu)",
+        "Your email* (Mandatory)": "E-posta Adresiniz* (Zorunlu)",
+        "Your phone* (Mandatory)": "Telefon Numaranız* (Zorunlu)",
+        "Subject* (Mandatory)": "Konu* (Zorunlu)",
+        "Your message* (Mandatory)": "Mesajınız* (Zorunlu)",
+        "Send": "Gönder",
+        "Sending...": "Gönderiliyor...",
+        "Thank you": "Teşekkürler",
+        "We will contact you later.": "Size daha sonra ulaşacağız.",
+        "Close": "Kapat",
+        "Add a Volunteer": "Gönüllü Ekle",
+        "Full Name": "Tam Ad",
+        "Phone Number": "Telefon Numarası",
+        "Address 1": "Adres 1",
+        "Address 2": "Adres 2",
+        "Submit": "Gönder",
+        "Submitting...": "Gönderiliyor...",
+        "Volunteer added successfully!": "Gönüllü başarıyla eklendi!",
+        "Failed to add volunteer.": "Gönüllü ekleme başarısız oldu.",
+        "Donate Now": "Şimdi Bağış Yap",
+        "Name": "Ad",
+        "Email": "E-posta",
+        "Donation Amount": "Bağış Miktarı",
+        "Message": "Mesaj",
+        "Processing...": "İşleniyor...",
+        "Your donation was successful. We will contact you later.": "Bağışınız başarılı oldu. Size daha sonra ulaşacağız.",
+        "Error": "Hata",
+        "Something went wrong. Please try again later.": "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin."
+      }
+    
+    
+  }
+  

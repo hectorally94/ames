@@ -1,0 +1,78 @@
+{
+    "selectLanguage": "Choisir la langue",
+
+    "contact": {
+      "phone": "Téléphone",
+      "email": "Email"
+    },
+    "menu": {
+      "volunteer": "Etre Volontaire",
+      "donate": "Faire un don",
+      "home": "Accueil",
+      "doctor": "Docteur",
+
+      "actions": "Actions",
+      "events": "Evenements",
+      "about": "À propos de nous",
+      "mission": "Notre Mission",
+      "blog": "Notre Blog",
+      "contact": "Contact",
+      "login": "Connexion"
+    },
+
+    
+      "post": {
+        "Goal": "Objectif",
+"Raised": "Élevé",
+        "Type of Events": "Type d'événements",
+        "Type of Actions": "Type d'actions",
+        "Categories": "Catégories",
+        "Make a donation now": "Faire un don maintenant",
+        "Our Impact": "Notre impact",
+        "Participate": "Participer",
+        "Become a Volunteer": "Devenir bénévole",
+        "Success Stories": "Histoires de réussite",
+        "Latest Actions of AMES": "Dernières actions de AMES",
+        "Our Gallery": "Notre galerie",
+        "Meet Our Team": "Rencontrez notre équipe",
+        "Our Expert Volunteers": "Nos bénévoles experts",
+        "Latest Events of AMES": "Derniers événements de AMES",
+        "Our Events":"Nos événements",
+        "Our Blog": "Notre blog",
+        "Latest News": "Dernières nouvelles",
+        "Our Main Partners": "Nos principaux partenaires",
+        "Donating in the Name of Allah": "Faire un don au nom d'Allah",
+        "Contact the Association": "Contacter l'association",
+        "Your name and surname* (Mandatory)": "Votre nom et prénom* (Obligatoire)",
+        "Your email* (Mandatory)": "Votre email* (Obligatoire)",
+        "Your phone* (Mandatory)": "Votre téléphone* (Obligatoire)",
+        "Subject* (Mandatory)": "Sujet* (Obligatoire)",
+        "Your message* (Mandatory)": "Votre message* (Obligatoire)",
+        "Send": "Envoyer",
+        "Sending...": "Envoi en cours...",
+        "Thank you": "Merci",
+        "We will contact you later.": "Nous vous contacterons plus tard.",
+        "Close": "Fermer",
+        "Add a Volunteer": "Ajouter un bénévole",
+        "Full Name": "Nom complet",
+        "Phone Number": "Numéro de téléphone",
+        "Address 1": "Adresse 1",
+        "Address 2": "Adresse 2",
+        "Submit": "Soumettre",
+        "Submitting...": "Soumission en cours...",
+        "Volunteer added successfully!": "Bénévole ajouté avec succès !",
+        "Failed to add volunteer.": "Échec de l'ajout du bénévole.",
+        "Donate Now": "Faire un don maintenant",
+        "Name": "Nom",
+        "Email": "Email",
+        "Donation Amount": "Montant du don",
+        "Message": "Message",
+        "Processing...": "Traitement en cours...",
+        "Your donation was successful. We will contact you later.": "Votre don a été un succès. Nous vous contacterons plus tard.",
+        "Error": "Erreur",
+        "Something went wrong. Please try again later.": "Une erreur est survenue. Veuillez réessayer plus tard."
+      }
+    
+    
+  }
+  

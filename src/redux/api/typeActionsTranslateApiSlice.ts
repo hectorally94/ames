@@ -12,7 +12,13 @@ export interface TypeActionsTranslateDto {
   languageId: number;
   languageName: string;
 }
-
+// Define the interfaces for Event and related types
+interface PaginatedResponse<T> {
+  data: T[];
+  currentPage: number;
+  totalItems: number;
+  totalPages: number;
+}
 // Define the tag types
 export const TYPE_ACTIONS_TRANSLATE_TAGS = ['TypeActionsTranslates'] as const;
 
@@ -23,21 +29,22 @@ const typeActionsTranslateApiSlice = apiServices
   })
   .injectEndpoints({
     endpoints: (builder) => ({
-      // Endpoint to fetch all type actions translates
-      getAllTypeActionsTranslates: builder.query<TypeActionsTranslate[], void>({
-        query: () => ({
-          url: '/type-actions-translate',
-          method: 'GET',
-        }),
-        providesTags: [TYPE_ACTIONS_TRANSLATE_TAGS[0]], // Tag for the list of type actions translates
+       // Endpoint to fetch paginated actions with optional title filtering
+       getAllTypeActionsTranslates: builder.query<PaginatedResponse<TypeActionsTranslateDto>, { name?: string; page?: number; size?: number; sort?: string }>({
+      query: ({ name = '', page = 0, size = 15, sort = 'id,desc' }) => ({
+        url: '/type-actions-translateDtoAll',
+        params: { name, page, size, sort },
+        method: 'GET',
       }),
+      providesTags: [TYPE_ACTIONS_TRANSLATE_TAGS[0]], // Tag for the list of type actions translates
+    }), 
       // Endpoint to fetch a specific type actions translate by ID
       getTypeActionsTranslateById: builder.query<TypeActionsTranslate, number>({
         query: (id) => ({
           url: `/type-actions-translate/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: TYPE_ACTIONS_TRANSLATE_TAGS[0], id }], // Tag for individual type actions translate
+        providesTags: (_result, _error, id) => [{ type: TYPE_ACTIONS_TRANSLATE_TAGS[0], id }], // Tag for individual type actions translate
       }),
       // Endpoint to fetch all type actions translate DTOs
       getAllTypeActionsTranslateDtos: builder.query<TypeActionsTranslateDto[], void>({

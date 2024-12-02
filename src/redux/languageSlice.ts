@@ -1,12 +1,17 @@
 // languageSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
+export interface Language {
+  id: any | null; // id can be a string or null
+  name: any;
+}
 interface LanguageState {
   language: string;
 }
+// Check localStorage for the saved language, default to 'English' if not found
+const initialLanguage = localStorage.getItem('selectedLanguage') || 'French';
 
 const initialState: LanguageState = {
-  language: 'en', // Default language
+  language: initialLanguage, // Default language
 };
 
 const languageSlice = createSlice({

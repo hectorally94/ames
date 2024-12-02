@@ -30,7 +30,7 @@ const infoApiSlice = apiServices
           url: `/info/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: INFO_TAGS[0], id }], // Tag for individual info
+        providesTags: (_result, _error, id) => [{ type: INFO_TAGS[0], id }], // Tag for individual info
       }),
       // Endpoint to create a new info
       createInfo: builder.mutation<Info, Partial<Info>>({

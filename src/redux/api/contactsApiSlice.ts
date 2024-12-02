@@ -35,7 +35,7 @@ const contactsApiSlice = apiServices
           url: `/contacts/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: CONTACTS_TAGS[0], id }], // Tag for individual contact
+        providesTags: (_result, _error, id) => [{ type: CONTACTS_TAGS[0], id }], // Tag for individual contact
       }),
       // Endpoint to create a new contact
       createContact: builder.mutation<Contact, Omit<Contact, 'id' | 'dateCreated'>>({

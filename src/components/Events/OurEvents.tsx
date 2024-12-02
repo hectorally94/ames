@@ -1,34 +1,82 @@
 // components/Events/OurEvents.tsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import EventCard from './EventCard';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../common/store';
+import { useGetPaginatedLastEventsAllOneQuery } from '../../redux/api/eventsApiSlice';
 
-interface Event {
-  date: string;
-  category: string;
+interface Event {id: number;
   title: string;
-  imageUrl: string;
+  objectif: string;
+  recolte: string;
+  description: string;
+  date:string;
+  
+  typeActionsTranslateId: number;
+  typeActionsTranslate: string;
+  languageId: number;
+  languageName: string;
+  categoryTranslateId: number;
+  categoryTranslate: string;
+  clanguageId: number;
+  clanguageName: string;
+  storeImageId: number;
+  storeImageName: string;
+  storeImageType: string;
+  imagedata: any;
 }
-
-const events: Event[] = [
-  { date: '20 Sep 2018', category: 'Éducation', title: 'Éducation pour Tous les Enfants', imageUrl: 'https://c7.alamy.com/comp/EK0420/western-health-aid-workers-helping-local-families-at-a-health-clinic-EK0420.jpg' },
-  { date: '20 Sep 2018', category: 'Nourriture', title: 'Nourriture pour Tout le Monde', imageUrl: 'https://c7.alamy.com/comp/EK9EDW/a-congolese-nurse-and-western-health-aid-worker-feeding-a-baby-heal-EK9EDW.jpg' },
-  { date: '20 Sep 2018', category: 'Traitement', title: 'Traitement Gratuit', imageUrl: 'https://c7.alamy.com/comp/EK9EWJ/an-african-nurse-nursing-a-baby-in-a-ward-the-heal-africa-charity-EK9EWJ.jpg' },
-];
+interface MyResponse {
+  message: string;
+  data: Event[];
+}  
 
 const OurEvents: React.FC = () => {
+  const { t } = useTranslation();
+
+
+  const [currentPage, _setCurrentPage] = useState(0);
+  const [itemsPerPage, _setItemsPerPage] = useState(3);
+  const [sort, _setSort] = useState('id,desc'); // Default sort as a single string
+
+ 
+  const selectedLanguage = useSelector((state: RootState) => state.language.language); // Get selected language from Redux store
+  const { data } = useGetPaginatedLastEventsAllOneQuery({ languageName:selectedLanguage, page: currentPage, size: itemsPerPage, sort });
+  
+  const { data:defaultData } = useGetPaginatedLastEventsAllOneQuery({ languageName:'French', page: currentPage, size: itemsPerPage, sort });
+  const [typeContent, setTypeContent] = useState<Event[]>([]);
+
+  useEffect(() => {
+    if (data) {
+      const fetchedData = (data as unknown as MyResponse)?.data || [];
+      
+      if (fetchedData.length === 0 && selectedLanguage !== 'French') {
+        // If no content is found for the selected language, fall back to the default language (English)
+        const fallbackData = (defaultData as unknown as MyResponse)?.data || [];
+        setTypeContent(fallbackData);
+      } else {
+        setTypeContent(fetchedData);
+      }
+    } else if (defaultData) {
+      // In case the initial data request fails but fallback data is available
+      const fallbackData = (defaultData as unknown as MyResponse)?.data || [];
+      setTypeContent(fallbackData);
+    }
+  }, [data, defaultData, selectedLanguage]);
+
   return (
     <section className="py-20 px-6 bg-gray-100 dark:bg-gray-600">
       <div className="container mx-auto text-center dark:text-white">
-        <h2 className="text-4xl font-semibold mb-6">Nos Événements</h2>
-        <h3 className="text-2xl font-semibold mb-6">Événements à Venir</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {events.map((event, index) => (
+        <h2 className="text-4xl font-semibold mb-6 font-slab"> {t('post.Our Events') || ''}
+        </h2>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {typeContent.map((event, index) => (
             <EventCard
               key={index}
               date={event.date}
-              category={event.category}
+              category={event.categoryTranslate}
               title={event.title}
-              imageUrl={event.imageUrl}
+              imageUrl={event.imagedata}
             />
           ))}
         </div>

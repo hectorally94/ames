@@ -34,7 +34,7 @@ const donationsApiSlice = apiServices
           url: `/donations/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: DONATIONS_TAGS[0], id }], // Tag for individual donation
+        providesTags: (_result, _error, id) => [{ type: DONATIONS_TAGS[0], id }], // Tag for individual donation
       }),
       // Endpoint to create a new donation
       createDonation: builder.mutation<Donation, Omit<Donation, 'id' | 'dateCreated'>>({

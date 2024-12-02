@@ -41,7 +41,7 @@ const autreInfoApiSlice = apiServices
           url: `/type_autre_info/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: AUTRE_TYPE_INFO_TAGS[0], id }], // Tag for individual type action
+        providesTags: (_result, _error, id) => [{ type: AUTRE_TYPE_INFO_TAGS[0], id }], // Tag for individual type action
       }),
       // Endpoint to create a new type action
       

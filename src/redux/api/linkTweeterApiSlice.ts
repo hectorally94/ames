@@ -1,5 +1,5 @@
 import apiServices from "../../common/apiServices";
- import { Language as LinkTweeter } from "../../components/amesComponents/language/Model";
+import { Language as LinkTweeter } from "../languageSlice";
 
 // Define the tag types
 export const LinkTweeter_TAGS = ['LinkTweeter'] as const;
@@ -25,7 +25,7 @@ const linkTweeterApiSlice = apiServices
           url: `/linkTweeter/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: LinkTweeter_TAGS[0], id }], // Tag for individual LinkTweeter
+        providesTags: (_result, _error, id) => [{ type: LinkTweeter_TAGS[0], id }], // Tag for individual LinkTweeter
       }),
       // Endpoint to create a new LinkTweeter
       createLinkTweeter: builder.mutation<LinkTweeter, Partial<LinkTweeter>>({

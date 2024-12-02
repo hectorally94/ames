@@ -30,7 +30,7 @@ const typeImagesApiSlice = apiServices
           url: `/type-images/${id}`,
           method: 'GET',
         }),
-        providesTags: (result, error, id) => [{ type: TYPE_IMAGE_TAGS[0], id }], // Tag for individual type image
+        providesTags: (_result, _error, id) => [{ type: TYPE_IMAGE_TAGS[0], id }], // Tag for individual type image
       }),
       // Endpoint to create a new type image
       createTypeImage: builder.mutation<TypeImage, Partial<TypeImage>>({

@@ -1,0 +1,77 @@
+{
+    "selectLanguage": "Hitamo ururimi",
+
+    "contact": {
+      "phone": "Terefone",
+      "email": "Imeri"
+    },
+    "menu": {
+      "volunteer": "Kuba Umukorerabushake",
+      "donate": "Tanga Umutahe",
+      "home": "Ahabanza",
+      "doctor": "Muganga",
+      "actions": "Ibikorwa",
+      "events": "Ibikorwa vy’ingenzi",
+      "about": "Ibijanye Natwe",
+      "mission": "Inshingano Zacu",
+      "blog": "Ibaruwa Yacu",
+      "contact": "Tuvugane",
+      "login": "Kwinjira"
+    },
+    
+      "post": {
+
+   "Goal": "Intumbero",
+  "Raised": "Ibironkeyeje",
+        "Type of Events": "Ubwoko bw'ibikorwa",
+        "Type of Actions": "Ubwoko bw'ibikorwa",
+        "Categories": "Ibyiciro",
+        "Make a donation now": "Shira inkunga ubu",
+        "Our Impact": "Ingaruka zacu",
+        "Participate": "Shirahamwe",
+        "Become a Volunteer": "Ba umufasha",
+        "Success Stories": "Inkuru z'intsinzi",
+        "Latest Actions of AMES": "Ibikorwa bishasha vya AMES",
+        "Our Gallery": "Igaleri yacu",
+        "Meet Our Team": "Hura n'itsinda ryacu",
+        "Our Expert Volunteers": "Abafasha bacu b'inzobere",
+        "Latest Events of AMES": "Ibikorwa bishasha vya AMES",
+        "Our Events":"Ibyabaye",
+
+        "Our Blog": "Blog yacu",
+        "Latest News": "Amakuru mashasha",
+        "Our Main Partners": "Abafatanyabikorwa bacu b'ibanze",
+        "Donating in the Name of Allah": "Gutanga mu izina rya Allah",
+        "Contact the Association": "Tumanaho n'ishirahamwe",
+        "Your name and surname* (Mandatory)": "Izina ryawe n'irindi zina* (Kibanze)",
+        "Your email* (Mandatory)": "Imeli yawe* (Kibanze)",
+        "Your phone* (Mandatory)": "Telefoni yawe* (Kibanze)",
+        "Subject* (Mandatory)": "Umutwe w'ikibazo* (Kibanze)",
+        "Your message* (Mandatory)": "Ubutumwa bwawe* (Kibanze)",
+        "Send": "Ohereza",
+        "Sending...": "Biriko biroherezwa...",
+        "Thank you": "Murakoze",
+        "We will contact you later.": "Tuzokwigisha vuba.",
+        "Close": "Funga",
+        "Add a Volunteer": "Ongerako umufasha",
+        "Full Name": "Izina ryose",
+        "Phone Number": "Nambari ya telefoni",
+        "Address 1": "Adres 1",
+        "Address 2": "Adres 2",
+        "Submit": "Shira",
+        "Submitting...": "Biriko birashirwa...",
+        "Volunteer added successfully!": "Umufasha yongewe neza!",
+        "Failed to add volunteer.": "Gutanga umufasha ntibyashobotse.",
+        "Donate Now": "Shira inkunga ubu",
+        "Name": "Izina",
+        "Email": "Imeli",
+        "Donation Amount": "Igipimo c'inkunga",
+        "Message": "Ubutumwa",
+        "Processing...": "Biriko biratunganywa...",
+        "Your donation was successful. We will contact you later.": "Inkunga yawe yarashobotse. Tuzokwigisha vuba.",
+        "Error": "Ikosa",
+        "Something went wrong. Please try again later.": "Hari ikintu kitagenze neza. Nyamuneka, ongera wigerageze hanyuma."
+      }
+        
+  }
+  
