@@ -59,10 +59,10 @@ const blogsApiSlice = apiServices
           }),
          // Endpoint to fetch paginated actions with optional title filtering
          getPaginatedBlogsLast: builder.query<PaginatedResponse<BlogDto>,
-         { languageName?: string; page?: any; size?: any; sort?: string }>({
-         query: ({ languageName = '', page = 0, size = 3, sort = 'id,desc' }) => ({
+         { clanguageName?: string; page?: any; size?: any; sort?: string }>({
+         query: ({ clanguageName = 'French', page = 0, size = 3, sort = 'id,desc' }) => ({
            url: '/blogsAllLast',
-           params: { languageName, page, size, sort },
+           params: { clanguageName, page, size, sort },
            method: 'GET',
          }),
          providesTags: [BLOG_TAGS[0]], // Tag for the list of actions

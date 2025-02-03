@@ -42,11 +42,18 @@ const FromOurBlog: React.FC = () => {
   const [sort, _setSort] = useState('id,desc'); // Default sort as a single string
 
  
-  const selectedLanguage = useSelector((state: RootState) => state.language.language); // Get selected language from Redux store
-  const { data } = useGetPaginatedBlogsLastQuery({ languageName:selectedLanguage, page: currentPage, size: itemsPerPage, sort });
+ 
+ const selectedLanguage = useSelector((state: RootState) => state.language.language); // Get selected language from Redux store
+ console.log('selectedLanguage selectedLanguage',selectedLanguage)
+
+   const { data } = useGetPaginatedBlogsLastQuery({ clanguageName:selectedLanguage, page: currentPage, size: itemsPerPage, sort });
   
-  const { data:defaultData } = useGetPaginatedBlogsLastQuery({ languageName:'French', page: currentPage, size: itemsPerPage, sort });
+  console.log('data data',data)
+
+  const { data:defaultData } = useGetPaginatedBlogsLastQuery({ clanguageName:'French', page: currentPage, size: itemsPerPage, sort });
   const [typeContent, setTypeContent] = useState<BlogPost[]>([]);
+
+  console.log('defaultData defaultData',defaultData)
 
   useEffect(() => {
     if (data) {
@@ -64,7 +71,7 @@ const FromOurBlog: React.FC = () => {
       const fallbackData = (defaultData as unknown as MyResponse)?.data || [];
       setTypeContent(fallbackData);
     }
-  }, [data, defaultData, selectedLanguage]);
+  }, [data, defaultData, selectedLanguage,currentPage]);
 
   return (
     <section className="py-20 px-6 bg-gray-100 dark:bg-gray-600">

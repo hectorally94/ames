@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const axiosInstance = axios.create({
   baseURL: 'https://amues.org/api',  // Use the secure HTTPS endpoint
-//  baseURL: 'http://localhost:8088/api',
+ // baseURL: 'http://localhost:8088/api',
  // baseURL: 'http://172.105.33.252:8088/api',
 
   headers: {

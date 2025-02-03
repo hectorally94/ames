@@ -27,7 +27,7 @@ const Gallery: React.FC = () => {
   const selectedLanguage = useSelector((state: RootState) => state.language.language);
 
   const [currentPage, setCurrentPage] = useState(0);
-  const [itemsPerPage] = useState(6);
+  const [itemsPerPage] = useState(18);
   const [sort] = useState('id,desc');
 
   const { data } = useGetPaginatedType_image_image_storeAllOneQuery({ languageName: selectedLanguage, page: currentPage, size: itemsPerPage, sort });
@@ -46,7 +46,7 @@ const Gallery: React.FC = () => {
     } else if (defaultData) {
       setTypeContent((defaultData as unknown as MyResponse)?.data || []);
     }
-  }, [data, defaultData]);
+  }, [data, defaultData,currentPage]);
 
   const [selectedCategory, setSelectedCategory] = useState<string>('*');
   
